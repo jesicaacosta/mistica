@@ -1140,11 +1140,6 @@
 
 
 
-
-
-
-
-
 <!-- ============================================================
      PANTALLA DE GRACIAS
      ============================================================ -->
@@ -1167,25 +1162,6 @@
 
 
 
-
-
-
-<section id="gracias">
-  
-  <div class="flame">🔥</div>
-  <h2>¡Gracias por tu compra!</h2>
-  <p>
-    Ya recibimos tu pedido. Una vez que verifiquemos la transferencia,
-    nos ponemos en contacto por WhatsApp para coordinar talle y envío.
-    Cualquier duda, escribinos.
-  </p>
-
-  <button class="btn btn-solid" onclick="closeThanks()">
-    Volver a la tienda
-  </button>
-
-</section>
-
 <section id="gracias">
 
   <div class="flame">🔥</div>
@@ -1205,7 +1181,7 @@ const WHATSAPP_NUMBER = "5491173639842";
 
 // Estos datos se mostrarán al cliente al finalizar el pedido.
 const TRANSFER_DATA = {
-  bank: "Mercado Pago",
+  bank: "Brubank",
   holder: "Jesica Daiana Acosta", 
   cuit: "27-37769400-2",
   alias: "misticalab",
@@ -1229,7 +1205,7 @@ const COLORS = ["Blanco","Negro","Gris","Rojo","Azul marino"];
 
 const GARMENT_TYPES = {
   remera:               { label: "Remera",               material: "100% algodón", price: 25000 },
-  remera_niño:               { label: "Remera niño",     material: "100% algodón", price: 18000 },
+  remera_niño:          { label: "Remera niño",     material: "100% algodón", price: 18000 },
   remera_corte_mujer:   { label: "Remera corte mujer",    material: "100% algodón", sizes: ["S","M","L","XL"], price: 25000},
   remera_oversize:      { label: "Remera oversize",       material: "100% algodón",price: 27000 },
   remera_modal:         { label: "Remera modal",          material: "Tela modal" , price: 20000},
@@ -1322,21 +1298,21 @@ const READY_PRODUCTS = [
 const PROMOS = [
   {
     tag: "Lanzamiento",
-    title: "Nueva tanda: 25 años de GameCube",
-    text: "Estampa homenaje a la consola, en remera negra o gris.",
-    img: "" // foto de fondo de la promo (opcional, si la dejás vacía usa un fondo liso)
+    title: "Modelos de remeras y buzos nuevos",
+    text: "Estampas de Nezuco, ideal para fans de anime y cultura pop. Personalizá tu prenda con tu talle y color preferido.",
+    img: "/PROMOS/nezuco.png" // foto de fondo de la promo (opcional, si la dejás vacía usa un fondo liso)
   },
   {
-    tag: "Promo",
-    title: "2x en remeras de rock seleccionadas",
-    text: "Válido por tiempo limitado en diseños de AC/DC, Metallica y Stones.",
-    img: ""
+    tag: "Lanzamiento",
+    title: "Modelos de remeras y buzos nuevos",
+    text: "Estampas de Nezuco, ideal para fans de anime y cultura pop. Personalizá tu prenda con tu talle y color preferido.",
+    img: "/PROMOS/nezuco2.png" // foto de fondo de la promo (opcional, si la dejás vacía usa un fondo liso)
   },
   {
-    tag: "A pedido",
-    title: "Tu diseño, tu banda, tu ídolo",
-    text: "Mandanos la referencia y te lo estampamos del S al 7XL.",
-    img: ""
+    tag: "Lanzamiento",
+    title: "Modelos de remeras y buzos nuevos",
+    text: "Estampas de Nezuco, ideal para fans de anime y cultura pop. Personalizá tu prenda con tu talle y color preferido.",
+    img: "/PROMOS/nezuco3.png" // foto de fondo de la promo (opcional, si la dejás vacía usa un fondo liso)
   }
 ];
 
