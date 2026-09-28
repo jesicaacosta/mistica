@@ -22,9 +22,9 @@
     --line:#26262a;        /* líneas/bordes sutiles */
     --text:#f4f1ea;        /* texto principal, hueso/crudo */
     --text-dim:#9a9a9f;    /* texto secundario, gris */
-    --flame:#af2205;       /* naranja-fuego del logo de Mística, color de marca */
+    --flame:#db0545;       /* naranja-fuego del logo de Mística, color de marca */
     --flame-dim:#7a2a1c;   /* variante oscura del naranja para hovers/sombras */
-    --ok:#5bbf7a;          /* verde para confirmaciones */
+    --ok: goldenrod;          /* verde para confirmaciones */
     --radius:2px;          /* casi sin bordes redondeados: look banda/streetwear, no "app genérica" */
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
@@ -250,7 +250,7 @@
   .card-price{ font-size:18px; font-weight:800; margin-top:2px; }
   .card-material{ font-size:11.5px; color:var(--text-dim); }
   .custom-note{
-    font-size:11px; color:var(--flame); font-weight:700; line-height:1.35;
+    font-size:11px; color:var(--text); font-weight:300; line-height:1.25;
     border-left:2px solid var(--flame); padding-left:7px; margin-top:2px;
   }
   .size-select{
@@ -446,6 +446,7 @@
 
 .checkout-header h2{
   margin: 8px 0 12px;
+  color: var(--flame);
 }
 
 .checkout-header p{
@@ -524,7 +525,8 @@
   margin-top: 22px;
   padding-top: 20px;
   border-top: 1px solid var(--line);
-  font-size: 1.1rem;
+  font-size: 1.6rem;
+  color: darkgoldenrod;
 }
 
 .checkout-total strong{
@@ -539,6 +541,8 @@
 .transfer-data{
   display: flex;
   flex-direction: column;
+  background: var(--bg-soft);
+  padding: 20px;
 }
 
 .transfer-row{
@@ -669,7 +673,7 @@
   cursor: pointer;
   /* Para que quede por encima del contenido */
   z-index: 2;
-  color:#5bbf7a
+  color: var(--accent);
 }
 
 .checkout-close:hover{
@@ -881,7 +885,7 @@
   <!-- Datos bancarios -->
   <div class="checkout-box">
 
-    <h3>Datos para la transferencia</h3>
+    <h3 class="resaltar">Datos para la transferencia</h3>
 
     <div class="transfer-data">
 
@@ -1222,7 +1226,7 @@ const GARMENT_TYPES = {
 // Texto fijo que se muestra en TODOS los productos personalizados
 // (catálogo de arriba, no en "Stock ya hecho"). Si cambian los días
 // de producción, se edita en un solo lugar y se actualiza en toda la web.
-const CUSTOM_NOTE = "Prenda personalizada: se hace especialmente para vos, estampa a elección. Demora de producción: 10 a 15 días hábiles. Se envía por correo o mensajería a todo el país.";
+const CUSTOM_NOTE = "Demora de producción: 10 a 15 días hábiles. <br> Se envía por correo o mensajería a todo el país.";
 
 // Array con todos los productos A PEDIDO (siempre disponibles: al ser
 // 100% personalizados, nunca se "agotan" — por eso ya no tienen campo
